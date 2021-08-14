@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Sorting Algorithm Visualizer</title></head>
+    <body>
+        <nav>
+            <label class="name">ALGORITHM VISUALIZER</label>
+            <ul class="algos">        
+                <li><button class="butt_unselected">Bubble</button></li>
+                <li><button class="butt_unselected">Selection</button></li>
+                <li><button class="butt_unselected">Insertion</button></li>
+                <li><button class="butt_unselected">Quick</button></li>
+                <li><button class="butt_unselected">Merge</button></li>
+                <li><button class="butt_unselected">Heap</button></li>
+                </nav>
+          <br>
+          <form>
+            <label for="arraysize">Array Size</label><br>
+            <input type="number" id="arraysize" name="Array Size" min="2" max="400" placeholder="Size in digits"/><br>
+            
+                <label for="arrayspeed">Sorting Speed</label><br>
+                <input type="range" id="arrayspeed" name="speed" min="1" max="5" step="1" value="4"/><br>
+                <!-- <button id="generate">Genrerate New Array</button> -->
+          </form>
+         
+          <section>
+              <div id="Info_Count1">
+                  <p>First container</p>
+              </div>
+              <div id="array_container"></div>
+              <div id="Info_Count2">
+                  <p>Second Container</p>
+              </div>
+          </section>
+
+          <script src="./script/main.js"></script>
+          <script src="./script/visualization.js"></script>
+          <script src="./script/bubble_sort.js"></script>
+          <script src="./script/selection_sort.js"></script>
+          <script src="./script/insertion_sort.js"></script>
+          <script src="./script/Merge_Sort.js"></script>
+          <script src="./script/quick_sort.js"></script>
+          <script src="./script/heap_sort.js"></script>
+    </body>
+
+</html>
